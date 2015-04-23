@@ -1,0 +1,10 @@
+<div class="radio-select">
+  <div class="hidden-xs radio" ng-repeat="field in values">
+    <label>
+      <input type="radio" name="{{field}}" ng-model="$parent.ngModel" value="{{field}}" />
+      {{field}}
+    </label>
+  </div>
+  
+  <select class="visible-xs-block form-control" ng-options="field as field for field in values" ng-model="ngModel"></select>
+</div>
